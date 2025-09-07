@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h6>Add New Listing</h6>
+         <form action="/submitNewListings" method='post' class="needs-validation" novalidate>
+        <label for="title" class="form-label">Title</label>
+        <input type="text"name="listings[title]" placeholder="Enter title" id="title"  class="form-control" required>
+        <label for="desc" class="form-label">Description</label>
+        <textarea name="listings[description]" id="" placeholder="Enter description" id="desc" class="form-control" required></textarea>
+        <label for="img" class="form-label">Image</label>
+        <input type="text"name="listings[image]" placeholder="Enter url of image" id="img" class="form-control">
+        <label for="price" class="form-label">Price</label>
+        <input type="number"name="listings[price]" placeholder="Enter price"  id="price" class="form-control" required>
+        <label for="loc" class="form-label">Location</label>
+        <input type="text"name="listings[location]" placeholder="Enter location" id="loc" class="form-control" required>
+        <label for="country" class="form-label">Country</label>
+        <input type="text"name="listings[country]" placeholder="Enter country name" id="country" class="form-control" required>
+        <br>
+        <button class="btn" type="submit">Add</button>
+        <br>
+        <br>
+    </form>
+    </div>
+               <script src="/public/js/script.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+                crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<% layout('layouts/boilerplate') -%>
+<body>
+    <div class="container">
+        <form action="/listings/edit/<%= data._id %>?_method=PUT" method='post'  novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="m-3">
+            <label for="title" class="form-label">Title</label>
+        <input type="text"name="listings[title]" placeholder="Enter title" value="<%= data.title %>" class="form-control" required>
+        </div>
+         <div  class="m-3">
+         <label for="desc" class="form-label">Description</label>
+        <textarea name="listings[description]" id="" placeholder="enter description" class="form-control" required><%= data.description %></textarea>
+        <div class="invalid-feedback">Description must be required</div>
+         </div>
+       
+         <!-- <label for="img" class="form-label">Image</label> -->
+          <div class="container">
+             <div class="col-md-6">
+
+            <img src="<%=currentUrl%>" alt="image"  height="100px" width="100px" >
+              </div>
+          </div>
+          <div  class="m-3">
+            <label for="img" class="form-label">Upload Image</label>
+        <input type="file"name="listings[image]" placeholder="Enter url of image"  class="form-control">
+          </div>
+        <div  class="m-3">
+             <label for="price" class="form-label">Price</label>
+        <input type="number"name="listings[price]" placeholder="Enter price" value="<%= data.price %>" class="form-control" required>
+        <div class="invalid-feedback">Enter valid Price</div>
+        </div>
+        <div  class="m-3">
+            <label for="loc" class="form-label">Location</label>
+        <input type="text"name="listings[location]" placeholder="Enter location" value="<%= data.location %>" class="form-control" required>
+        <div class="invalid-feedback">Location not be empty</div>
+        </div>
+        <div  class="m-3">
+            <label for="country" class="form-label">Country</label>
+        <input type="text"name="listings[country]" placeholder="Enter country name" value="<%= data.country %>" class="form-control" required>
+        <div class="invalid-feedback">Country should not be empty</div>
+        </div>
+        <div  class="m-3">
+            <button class="btn">Edit</button>
+        </div>
+        
+        
+    </form>
+    </div>
+    
+    <script src="/js/script.js"></script>
+</body>
+
+
+

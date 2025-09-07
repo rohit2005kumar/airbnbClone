@@ -1,0 +1,20 @@
+<%- layout('layouts/boilerplate') %>
+<body>
+  <div class="row">
+    <div class="col-6 offset-3">
+        <h4 class="mt-1 signtxt">Login</h4>
+        <form action="/login" method="post" class="needs-validation mt-2" novalidate>
+                <label for="username" class="form-label ">UserName</label>
+                <input type="text"name="username" id="username"  class="form-control" required>
+                <div class="valid-feedback">
+                Looks good!
+                </div>
+                  <label for="password" class="form-label mt-2">PassWord</label>
+                <input type="password"name="password"  id="password"  class="form-control" required>
+                <button class="btn signup mt-4">Login</button>
+                
+        </form>
+
+    </div>
+</div>
+</body>

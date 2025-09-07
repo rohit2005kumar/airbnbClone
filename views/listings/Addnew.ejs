@@ -1,0 +1,36 @@
+<% layout('layouts/boilerplate') -%>
+<body>
+    <div class="container">
+        <h6>Add New Listing</h6>
+         <form action="/listings/submitNewListings" method='post' class="needs-validation" novalidate enctype="multipart/form-data">
+        <label for="title" class="form-label">Title</label>
+        <input type="text"name="listings[title]" placeholder="Enter title" id="title"  class="form-control" required>
+         <div class="valid-feedback">
+       Title Looks good!
+        </div>
+        <label for="desc" class="form-label">Description</label>
+        <textarea name="listings[description]" id="" placeholder="Enter description" id="desc" class="form-control" required></textarea>
+        <div class="invalid-feedback">Enter desc</div>
+        <!-- <label for="img" class="form-label">Image</label>
+        <input type="text"name="listings[image]" placeholder="Enter url of image" id="img" class="form-control">
+       -->
+            <label for="imgupload" class="form-label">Upload imgae</label>
+         <input type="file"name="listings[image]" placeholder="Enter url of image" id="imgupload" class="form-control">
+        <label for="price" class="form-label">Price</label>
+        <input type="text"name="listings[price]" placeholder="Enter price"  id="price" class="form-control" required>
+        <div class="invalid-feedback">Enter Price</div>
+    
+        <label for="loc" class="form-label">Location</label>
+        <input type="text"name="listings[location]" placeholder="Enter location" id="loc" class="form-control" required>
+        <div class="invalid-feedback">Enter Location</div>
+        <label for="country" class="form-label">Country</label>
+        <input type="text"name="listings[country]" placeholder="Enter country name" id="country" class="form-control" required>
+        <div class="invalid-feedback">Enter Country</div>
+        <br>
+        <button class="btn" type="submit">Add</button>
+        <br>
+        <br>
+    </form>
+    </div>
+   
+</body>

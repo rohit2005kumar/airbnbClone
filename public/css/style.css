@@ -1,0 +1,127 @@
+body,html{
+    height: 100%;
+    background-color: lab(99.21% -0.3 -1.19) !important;
+    margin: 0 !important;
+    
+}
+
+
+
+/* .container{
+    height: 100vh !important;
+    width: 100vw;
+} */
+.navbar{
+    background-color: white;
+}
+.dark{
+    color: black!important;
+}
+.logo{
+    color: rgb(245, 62, 62);
+}
+.navbar-brand:hover{
+    color: rgb(245, 62, 62) !important;
+}
+.container-fluid >a{
+color: rgb(245, 62, 62);
+}
+/* footer.ejs */
+.fo-info{
+    display: flex ;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    background-color: rgb(247, 243, 243);
+   
+}
+.fa-brands{
+    font-size:1rem;
+    margin-right:.9rem;
+}
+.fo-log-copy{
+    font-size:1rem ;
+}
+.fo-terms a{
+    text-decoration: none;
+    font-size: .9rem;
+    color: black;
+   
+}
+.fo-terms a:hover{
+     text-decoration:underline;
+     
+}
+/* footer.ejs  completed*/
+
+/* cards */
+
+
+ .card-img-top{
+    height: 10rem;
+    
+    border-radius: .7rem !important; 
+ }
+ 
+ .card-body{
+    padding: .5rem !important;
+    padding-top: 0rem !important;
+ }
+ .card{
+margin: auto;
+border: none !important;
+ }
+  .cardDiv{
+margin: auto !important;
+
+
+ }
+ .card-img-top1:hover{
+    opacity: .8;
+ }
+ .card-anchor{
+    text-decoration: none;
+    height: 10rem ;
+   margin-top: 1.4rem !important;
+    margin-bottom: 3rem !important;
+ }
+/* Addnew */
+.btn{
+    background-color: rgb(245, 62, 62)!important;
+    color: white!important;
+}
+.btncolor{
+    background-color: beige!important;
+    color:black!important;
+}
+/* show */
+#showimg{
+    height: 20rem !important;
+  
+   
+}
+
+.cardborderremove{
+    border: none !important;
+}
+/* .card-body{padding: 1rem!important;} */
+
+ .signup{background-color: rgb(25,135,84) !important;
+}
+.signtxt{color:rgb(25,135,84) ;}
+
+ 
+.wraper{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+.container{
+    flex: 1 !important;
+}
+/* footer{
+    margin-bottom: 1rem;
+} */
+

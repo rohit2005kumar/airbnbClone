@@ -1,0 +1,19 @@
+<%-layout('layouts/boilerplate') %>
+<body>
+ <div class="row row-cols-lg-3 row-cols-mb-2 row-cols-sm-1">
+
+   <% for (let list of data) { %>
+      <a href="/listings/show/<%= list._id %>" class="card-anchor">
+      <div class="card col cardDiv" style="width: 22rem;">
+        <img src="<%= list.image.url %>" class="card-img-top card-img-top1 " alt="Listing-cards">
+       
+       <p class="card-text"><b><%= list.title %></b><br>&#8377;<%= list.price %>/night
+            &nbsp; &nbsp;<i class="tax-info">18 % GST</i></p>
+     
+     </div>
+  </a>
+   <% } %>
+    
+    
+  </div>
+</body>
